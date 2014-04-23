@@ -1,0 +1,4 @@
+---
+- name: Install Java
+  apt: pkg="{{java_package}}" state=latest install_recommends=False
+  sudo: yes
